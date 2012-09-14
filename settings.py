@@ -9,7 +9,7 @@ try:
 except:
     TORNADO_PORT = 8000
     COUCHDB_DB_NAME = "newebe"
-    DEBUG = False
+    DEBUG = True
     TIMEZONE = "GMT"
 
 
@@ -36,4 +36,5 @@ COUCHDB_DATABASES = (
     ('newebe.activities', COUCHDB_DB_URI),
     ('newebe.notes', COUCHDB_DB_URI),
     ('newebe.pictures', COUCHDB_DB_URI),
+    ('newebe.commons', COUCHDB_DB_URI),
 )
